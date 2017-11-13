@@ -1,5 +1,5 @@
 /*@import "~@angular/material/prebuilt-themes/indigo-pink.css";*/
-@include angular-material-theme($candy-app-theme);
+@include angular-material-theme($dark-blue-theme);
 /*--------------------------NAVBAR-------------------------*/
 mat-toolbar{
   border-bottom:1px solid grey;

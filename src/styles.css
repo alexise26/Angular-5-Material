@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@include angular-material-theme($candy-app-theme);
+@include angular-material-theme($dark-blue-theme);
 
 body {
   margin: 0;

@@ -21,7 +21,7 @@
       "styles": [
         "assets/b4/css/bootstrap.min.css",
         "assets/font-awesome/css/font-awesome.min.css",
-        "assets/material-themes/unicorn-app-theme.scss",
+        "assets/material-themes/dark-blue-app-theme.scss",
         "styles.css"
       ],
       "scripts": [
