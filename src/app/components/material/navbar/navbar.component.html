@@ -1,0 +1,14 @@
+  <div class="row">
+    <div class="col-sm-6 text-xs-center text-sm-left">
+      <span class="brand">Angular Material 2</span>
+    </div>
+    <div class="col-sm-6 d-none d-sm-block text-sm-right">
+      <img src="" alt="">
+      <img src="/assets/img/user.png" style="width:40px;" alt="user" class="rounded-circle img-user">
+      <button mat-button [matMenuTriggerFor]="menu">Alexis Escalante <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+      <mat-menu #menu="matMenu" style="background-color:pink">
+        <button mat-menu-item>Settings</button>
+        <button mat-menu-item>Log Out</button>
+      </mat-menu>
+    </div>
+  </div>

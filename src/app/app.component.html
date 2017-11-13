@@ -1,0 +1,24 @@
+<div>
+  <!-- PROGRESS BAR -->
+  <mat-progress-bar color="warn" mode="determinate" [value]="loader"></mat-progress-bar>
+  <!-- NAVBAR -->
+  <mat-toolbar color="primary">
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <app-navbar></app-navbar>
+  </mat-toolbar>
+
+  <!-- CONTAINER -->
+  <mat-sidenav-container >
+    <!-- SIDENAV -->
+    <mat-sidenav #sidenav mode="side" opened="true" class="app-sidenav">
+      <app-sidenav></app-sidenav>
+    </mat-sidenav>
+    <!-- CONTENT -->
+    <router-outlet></router-outlet>
+
+  </mat-sidenav-container>
+  <!-- FOOTER -->
+  <app-footer></app-footer>
+</div>

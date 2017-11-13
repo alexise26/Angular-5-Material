@@ -1,0 +1,34 @@
+
+<div class="text-center mt-3 mb-3">
+  <img src="/assets/img/user.png" alt="user" class="rounded-circle img-user"><br>
+  <button mat-button [matMenuTriggerFor]="menu">Alexis Escalante <i class="fa fa-angle-down" aria-hidden="true"></i></button><br>
+  <small class="grey"><i class="fa fa-cog" aria-hidden="true"></i> Administrator</small>
+</div>
+<mat-list>
+  <mat-divider></mat-divider>
+  <mat-list-item class="pt-2 pb-5 pointer menu-item" routerLinkActive="active" [routerLink]="['home']" >
+    <h3 matLine> Home </h3>
+    <mat-icon matListIcon>home</mat-icon>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+    <mat-list-item class="pt-2 pb-5 pointer menu-item" routerLinkActive="active" [routerLink]="['dashboard']">
+      <h3 matLine> Dashboard </h3>
+      <mat-icon matListIcon>dashboard</mat-icon>
+    </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item class="pt-2 pb-5 pointer menu-item" routerLinkActive="active" [routerLink]="['user']">
+    <h3 matLine> User </h3>
+    <mat-icon matListIcon>person</mat-icon>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item class="pt-2 pb-5 pointer menu-item" routerLinkActive="active" [routerLink]="['notifications']">
+    <h3 matLine> Notifications </h3>
+    <mat-icon matListIcon>message</mat-icon>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+</mat-list>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Settings</button>
+  <button mat-menu-item>Log Out</button>
+</mat-menu>

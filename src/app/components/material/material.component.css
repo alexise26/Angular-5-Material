@@ -1,0 +1,55 @@
+/*@import "~@angular/material/prebuilt-themes/indigo-pink.css";*/
+@include angular-material-theme($candy-app-theme);
+/*--------------------------NAVBAR-------------------------*/
+mat-toolbar{
+  border-bottom:1px solid grey;
+}
+app-navbar{
+  width: 100%;
+  color:white;
+}
+mat-toolbar button mat-icon{
+  margin-top:-10px;
+}
+/*--------------------------SIDENAV-------------------------*/
+.app-sidenav {
+  padding: 10px;
+  width: 250px;
+  background-color: #263238;
+  color:white;
+}
+.menu-item h3, .menu-item mat-icon{
+  color: #fff;
+}
+.menu-item:hover{
+  background-color: #1e272c;
+}
+.menu-item.active{
+  background-color: #0078BB;
+}
+.img-user{
+  max-width:100px;
+}
+.grey{
+  color:#9c9c9c;
+}
+/*--------------------------FOOTER-------------------------*/
+.footer{
+  /*background-color:#c11157;*/
+  background-color: #37474F;
+  color:grey;
+  border-top:1px solid grey
+}
+/*--------------------------COMPONENT-------------------------*/
+.title-tab{
+  color:black;
+  background-color: #e9ecef;
+  height: 70px;
+}
+
+.done {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+}
